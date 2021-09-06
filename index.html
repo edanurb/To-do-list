@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="desing.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <title>JAVA</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1 class="text-secondary">To Do App</h1>
+    <div class="bg-light border px-3 p-2 rounded-top text-secondary">New Task</div>
+
+    <div class="pt-3 pb-4 border px-2 rounded-bottom">
+
+      <form class="input-group row-6" id="form">
+        <input type="text" class="form-control rounded-left " placeholder="Type a new task" id="girdi">
+        <div class="input-group-append">
+
+          <input type="submit" class=" btn btn-primary" value="+" id="submit">
+        </div>
+      </form>
+    </div>
+
+    <div class="taskList">
+      <div class=" bg-light mt-4 p-2 border rounded d-flex justify-content-between"">
+        <span class=" text-secondary">Task List</span> 
+        <button class="btn btn-sm text-danger border-danger" id="delete-btn">Delete All</button>
+
+      </div>
+      <div class=" border p-2 pl-3 d-flex justify-content-between" id='doTask'>
+        <span class="text-secondary">To do 1</span> <button class="btn btn-sm mr-4" id="closeBtn">X </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="java.js"></script>
+
+
+</body>
+
+</html>
